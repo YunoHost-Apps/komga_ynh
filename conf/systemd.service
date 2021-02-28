@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=java -jar __FINALPATH__/komga.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__" >> /var/log/__APP__/__APP__.log 2>&1
+ExecStart=java -jar __FINALPATH__/app.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__" >> /var/log/__APP__/__APP__.log 2>&1
 
 [Install]
 WantedBy=multi-user.target
