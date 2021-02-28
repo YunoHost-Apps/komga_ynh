@@ -1,7 +1,6 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/gotson/komga/releases/download/v0.75.1/komga-0.75.1.jar
+SOURCE_SUM=3e39aefe18e48d9680e3590826b9f713ca22844c3c565982ab1d587e4ae6d7c3
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=jar
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
-SOURCE_EXTRACT=true
+SOURCE_EXTRACT=false
