@@ -20,7 +20,7 @@ Features include:
 * Manage multiple users, with per-library accesss control
 * Webreader
 
-**Shipped version:** 0.75.2
+**Shipped version:** 0.75.1
 
 ## Screenshots
 
