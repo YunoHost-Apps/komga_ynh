@@ -101,12 +101,6 @@ ynh_system_user_create --username=$app
 mkdir -p /home/$app/.komga/
 
 #=================================================
-# SECURING FILES AND DIRECTORIES
-#=================================================
-
-chmod -R 755 /home/$app/.komga/
-
-#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
@@ -125,6 +119,8 @@ ynh_add_systemd_config
 
 # Set permissions to app files
 chown -R $app: $final_path
+chown -R $app: /home/$app
+chmod -R 755 /home/$app/.komga/
 
 #=================================================
 # SETUP LOGROTATE
