@@ -1,4 +1,4 @@
-# Komga
+# Komga for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/Komga.svg)](https://dash.yunohost.org/appci/app/Komga) ![](https://ci-apps.yunohost.org/ci/badges/Komga.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/Komga.maintain.svg)  
 [![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
@@ -29,6 +29,9 @@ Features include:
 ## Demo
 
 * [Official demo](https://demo.komga.org)
+
+- Login: `demo@komga.org`
+- Password: `komga-demo`
 
 ## Configuration
 
