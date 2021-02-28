@@ -111,6 +111,8 @@ ynh_replace_string --match_string=__PATH__ --replace_string="$path_url" --target
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
+
+
 #=================================================
 # GENERIC FINALIZATION
 #=================================================
@@ -119,6 +121,7 @@ ynh_add_systemd_config
 
 # Set permissions to app files
 chown -R $app: $final_path
+chmod +x $final_path/app.jar
 chown -R $app: /home/$app
 chmod -R 755 /home/$app/.komga/
 
