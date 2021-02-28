@@ -47,8 +47,8 @@ Can the app be used by multiple users? **Yes**
 
 #### Supported architectures
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/komga%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/komga/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/komga%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/komga/)
 
 ## Limitations
 
@@ -57,8 +57,8 @@ Can the app be used by multiple users? **Yes**
 ## Links
 
  * Report a bug: https://github.com/YunoHost-Apps/komga_ynh/issues
- * App website: Link to the official website of this app.
- * Upstream app repository: Link to the official repository of the upstream app.
+ * App website: https://komga.org
+ * Upstream app repository: https://github.com/gotson/komga
  * YunoHost website: https://yunohost.org/
 
 ---
@@ -69,7 +69,7 @@ Please send your pull request to the [testing branch](https://github.com/YunoHos
 
 To try the testing branch, please proceed like that.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade REPLACEBYYOURAPP -u https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
+sudo yunohost app upgrade komga -u https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 ```
