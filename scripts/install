@@ -141,6 +141,20 @@ ynh_script_progression --message="Configuring system user..." --time --weight=1
 ynh_system_user_create --username=$app
 
 #=================================================
+# SPECIFIC SETUP
+#=================================================
+# CREATE DIRECTORIES
+#=================================================
+
+mkdir -p /home/$app/.komga/
+
+#=================================================
+# SECURING FILES AND DIRECTORIES
+#=================================================
+
+chmod -R 777 /home/$app/.komga/
+
+#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --time --weight=1

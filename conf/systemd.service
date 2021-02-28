@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=java -jar __FINALPATH__/script --komga.database.file /opt/yunohost/__APP__/database.sqlite --server.port __PORT__ >> /var/log/__APP__/__APP__.log 2>&1
+ExecStart=java -jar __FINALPATH__/app.jar --server.port __PORT__ >> /var/log/__APP__/__APP__.log 2>&1
 
 [Install]
 WantedBy=multi-user.target
