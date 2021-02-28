@@ -8,7 +8,7 @@
     },
     "version": "0.75.1~ynh1",
     "url": "https://komga.org",
-    "license": "free",
+    "license": "MIT",
     "maintainer": {
         "name": "Navan Chauhan",
         "email": "navanchauhan@gmail.com",
