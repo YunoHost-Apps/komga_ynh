@@ -110,7 +110,7 @@ yunohost service add $app --description="Media server for your comics, manga and
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=3
 
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd"
 
 #=================================================
 # RESTORE THE LOGROTATE CONFIGURATION

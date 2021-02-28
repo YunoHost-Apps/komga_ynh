@@ -108,6 +108,7 @@ ynh_add_systemd_config
 
 # Set permissions on app files
 chown -R $app: $final_path
+chmod +x $final_path/app.jar
 
 #=================================================
 # SETUP LOGROTATE
@@ -129,7 +130,7 @@ yunohost service add $app --description="Media server for your comics, manga and
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --time --weight=1
 
-ynh_systemd_action --service_name=$app --action=start --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd"
 
 #=================================================
 # RELOAD NGINX
