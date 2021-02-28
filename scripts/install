@@ -84,6 +84,7 @@ ynh_script_progression --message="Finding an available port..." --time --weight=
 # Find an available port
 port=$(ynh_find_port --port=8080)
 ynh_replace_string --match_string=__PORT__ --replace_string="$port" --target_file="../conf/systemd.service"
+ynh_replace_string --match_string=__PATH__ --replace_string="$path_url" --target_file="../conf/systemd.service"
 ynh_app_setting_set --app=$app --key=port --value=$port
 
 # Optional: Expose this port publicly
