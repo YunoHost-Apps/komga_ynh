@@ -10,8 +10,6 @@ WorkingDirectory=__FINALPATH__/
 ExecStart=/usr/bin/java -jar -Xmx1g app.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__/"
 Restart=on-failure
 RestartSec=10
-StandardOutput=null
-StandardError=syslog
 
 [Install]
 WantedBy=multi-user.target
