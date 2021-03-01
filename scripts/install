@@ -138,7 +138,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=2
 
-yunohost service add $app --description="Media server for your comics, manga and magazines" --log="systemd"
+yunohost service add $app --description="Media server for your comics, manga and magazines" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
