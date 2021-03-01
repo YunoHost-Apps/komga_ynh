@@ -108,7 +108,7 @@ fi
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=5
 
-ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Started Komga server"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Tomcat started on port\(s\): $port \(http\) with context path '$path_url'"
 
 #=================================================
 # RELOAD NGINX
