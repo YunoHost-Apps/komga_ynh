@@ -1,0 +1,26 @@
+komga:
+  libraries-scan-cron: "* */15 * * * ?" #periodic scan every 15 minutes
+  libraries-scan-cron: "-" #disable periodic scan
+  libraries-scan-startup: false #scan libraries at startup
+  libraries-scan-directory-exclusions: #patterns to exclude directories from the scan
+    - "#recycle" #synology NAS recycle bin
+    - "@eaDir"   #synology NAS index/metadata folders
+  remember-me:
+    key: changeMe! #required to activate the remember-me auto-login via cookies
+    validity: 2592000 #validity of the cookie in seconds, here 1 month
+  database:
+    file: /home/__APP__/.komga/database.sqlite
+  database-backup:
+    path: ~/.komga/database-backup.zip
+    schedule: "0 0 */6 * * ?" #every 6 hours
+    enabled: true
+    startup: true
+server:
+  port: __PORT__
+  servlet.context-path: __PATH__/
+spring:
+  datasource:
+    url: jdbc:h2:/path/to/your/database.h2 #absolute path for Unix
+    url: jdbc:h2:D:\\komga\database.h2 #absolute path for Windows
+    url: jdbc:h2:~/.komga/database.h2 #relative path to user home directory
+    url: jdbc:h2:./komga/database.h2 #relative path to current directory

@@ -3,10 +3,10 @@
     "id": "komga",
     "packaging_format": 1,
     "description": {
-        "en": "Komga is a free and open source comics/mangas/magazines server.",
-        "fr": "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+        "en": "Media server for your comics, manga and magazines",
+        "fr": "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
     },
-    "version": "0.75.1~ynh1",
+    "version": "0.75.1~ynh2",
     "url": "https://komga.org",
     "license": "MIT",
     "maintainer": {
