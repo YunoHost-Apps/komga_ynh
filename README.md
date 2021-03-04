@@ -1,6 +1,6 @@
 # Komga for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/Komga.svg)](https://dash.yunohost.org/appci/app/Komga) ![](https://ci-apps.yunohost.org/ci/badges/Komga.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/Komga.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
 [![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
 *[Lire ce readme en français.](./README_fr.md)*
