@@ -146,7 +146,7 @@ yunohost service add $app --description="Media server for your comics, manga and
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Tomcat initialized with port\(s\): $port \(http\)" --timeout="500"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Tomcat started on port\(s\): $port \(http\) with context path '$path_url'" --timeout="800"
 
 #=================================================
 # SETUP SSOWAT
