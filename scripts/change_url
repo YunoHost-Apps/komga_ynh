@@ -69,9 +69,9 @@ fi
 # STOP SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Stopping a systemd service..." --weight=1
-
 ynh_systemd_action --service_name=$app --action=stop --log_path="/var/log/$app/$app.log"
-
+ynh_replace_string --match_string="$YNH_APP_OLD_PATH" --replace_string="$YNH_APP_NEW_PATH" --target_file="/etc/systemd/system/$app.service"
+systemctl daemon-reload
 #=================================================
 # MODIFY URL IN NGINX CONF
 #=================================================

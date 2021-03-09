@@ -8,6 +8,7 @@
     },
     "version": "0.77.3~ynh1",
     "url": "https://komga.org",
+    "multi_instance": true,
     "license": "MIT",
     "maintainer": {
         "name": "Navan Chauhan",
