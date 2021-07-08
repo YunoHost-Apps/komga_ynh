@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=/usr/bin/java -jar -Xmx1g app.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__/"
+WorkingDirectory=__FINALPATH__
+ExecStart=/usr/bin/java -jar -Xmx1g komga.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__"
 Restart=on-failure
 RestartSec=10
 

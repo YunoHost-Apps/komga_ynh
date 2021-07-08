@@ -68,6 +68,14 @@ ynh_script_progression --message="Installing dependencies..." --weight=1
 ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Configuring system user..." --weight=2
+
+# Create a system user
+ynh_system_user_create --username=$app --home_dir="$final_path"
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=15
@@ -75,6 +83,11 @@ ynh_script_progression --message="Setting up source files..." --weight=15
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$final_path"
+
+chmod 750 "$final_path"
+chmod -R o-rwx "$final_path"
+chown -R $app:www-data "$final_path"
+chmod +x $final_path/komga.jar
 
 #=================================================
 # NGINX CONFIGURATION
@@ -85,45 +98,26 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=2
 ynh_add_nginx_config
 
 #=================================================
-# CREATE DEDICATED USER
+# CREATE DATA DIRECTORY
 #=================================================
-ynh_script_progression --message="Configuring system user..." --weight=2
+ynh_script_progression --message="Creating a data directory..." --weight=1
 
-# Create a system user
-ynh_system_user_create --username=$app
+datadir=/home/yunohost.app/$app
+ynh_app_setting_set --app=$app --key=datadir --value=$datadir
 
-#=================================================
-# SPECIFIC SETUP
-#=================================================
-# CREATE DIRECTORIES
-#=================================================
+mkdir -p $datadir/.komga
 
-mkdir -p /home/$app/.komga/
+chmod 750 "$datadir"
+chmod -R o-rwx "$datadir"
+chown -R $app:www-data "$datadir"
 
 #=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-ynh_replace_string --match_string=__PORT__ --replace_string="$port" --target_file="../conf/systemd.service"
-ynh_replace_string --match_string=__PATH__ --replace_string="$path_url" --target_file="../conf/systemd.service"
-
 # Create a dedicated systemd config
 ynh_add_systemd_config
-
-
-
-#=================================================
-# GENERIC FINALIZATION
-#=================================================
-# SECURE FILES AND DIRECTORIES
-#=================================================
-
-# Set permissions to app files
-chown -R $app: $final_path
-chmod +x $final_path/app.jar
-chown -R $app: /home/$app
-chmod -R 755 /home/$app/.komga/
 
 #=================================================
 # SETUP LOGROTATE
