@@ -13,12 +13,16 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Serveur multimédia pour vos bandes dessinées, mangas et magazines
 
-**Version incluse :** 0.87.4~ynh1
+**Version incluse :** 0.106.1~ynh1
 
-
+**Démo :** https://demo.komga.org
 
 ## Documentations et ressources
 
+* Site officiel de l'app : https://komga.org
+* Documentation officielle utilisateur : https://yunohost.org/apps
+* Documentation officielle de l'admin : https://komga.org/guides/
+* Dépôt de code officiel de l'app : https://github.com/gotson/komga
 * Documentation YunoHost pour cette app : https://yunohost.org/app_komga
 * Signaler un bug : https://github.com/YunoHost-Apps/komga_ynh/issues
 

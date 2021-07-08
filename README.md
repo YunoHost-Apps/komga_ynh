@@ -17,12 +17,16 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Media server for your comics, manga and magazines
 
-**Shipped version:** 0.87.4~ynh1
+**Shipped version:** 0.106.1~ynh1
 
-
+**Demo:** https://demo.komga.org
 
 ## Documentation and resources
 
+* Official app website: https://komga.org
+* Official user documentation: https://yunohost.org/apps
+* Official admin documentation: https://komga.org/guides/
+* Upstream app code repository: https://github.com/gotson/komga
 * YunoHost documentation for this app: https://yunohost.org/app_komga
 * Report a bug: https://github.com/YunoHost-Apps/komga_ynh/issues
 
