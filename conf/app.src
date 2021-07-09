@@ -1,6 +1,7 @@
-SOURCE_URL=https://github.com/gotson/komga/releases/download/v0.87.4/komga-0.87.4.jar
-SOURCE_SUM=35ff050b912d516e8026e22a85deb5e76d70744d520d7e92203192fb9abb4101
+SOURCE_URL=https://github.com/gotson/komga/releases/download/v0.106.1/komga-0.106.1.jar
+SOURCE_SUM=53c7c617793acbfb134ed5c3c48c1702761feb67fd6a5478bdf403f3479fc40a
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=jar
-SOURCE_IN_SUBDIR=true
+SOURCE_IN_SUBDIR=false
 SOURCE_EXTRACT=false
+SOURCE_FILENAME=komga.jar

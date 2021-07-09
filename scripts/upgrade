@@ -55,6 +55,14 @@ ynh_script_progression --message="Stopping a systemd service..." --weight=2
 ynh_systemd_action --service_name=$app --action=stop --log_path="/var/log/$app/$app.log"
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Making sure dedicated system user exists..." --weight=6
+
+# Create a dedicated user (if not existing)
+ynh_system_user_create --username=$app --home_dir="$final_path"
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
@@ -65,6 +73,11 @@ then
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$final_path"
 fi
+
+chmod 750 "$final_path"
+chmod -R o-rwx "$final_path"
+chown -R $app:www-data "$final_path"
+chmod +x $final_path/komga.jar
 
 #=================================================
 # NGINX CONFIGURATION
@@ -82,33 +95,12 @@ ynh_script_progression --message="Upgrading dependencies..." --weight=1
 ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
-# CREATE DEDICATED USER
-#=================================================
-ynh_script_progression --message="Making sure dedicated system user exists..." --weight=6
-
-# Create a dedicated user (if not existing)
-ynh_system_user_create --username=$app
-
-#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
 
-ynh_replace_string --match_string=__PORT__ --replace_string="$port" --target_file="../conf/systemd.service"
-ynh_replace_string --match_string=__PATH__ --replace_string="$path_url" --target_file="../conf/systemd.service"
-
 # Create a dedicated systemd config
 ynh_add_systemd_config
-
-#=================================================
-# GENERIC FINALIZATION
-#=================================================
-# SECURE FILES AND DIRECTORIES
-#=================================================
-
-# Set permissions on app files
-chown -R $app: $final_path
-chmod +x $final_path/app.jar
 
 #=================================================
 # SETUP LOGROTATE
@@ -130,7 +122,7 @@ yunohost service add $app --description="Media server for your comics, manga and
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=2
 
-ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Completed initialization" --timeout="120"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Started ApplicationKt"
 
 #=================================================
 # RELOAD NGINX

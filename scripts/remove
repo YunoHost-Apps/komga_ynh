@@ -56,7 +56,6 @@ ynh_script_progression --message="Removing app main directory and database..." -
 
 # Remove the app directory securely
 ynh_secure_remove --file="$final_path"
-ynh_secure_remove --file="/home/komga"
 
 #=================================================
 # REMOVE NGINX CONFIGURATION
@@ -73,15 +72,6 @@ ynh_script_progression --message="Removing logrotate configuration..." --weight=
 
 # Remove the app-specific logrotate config
 ynh_remove_logrotate
-
-#=================================================
-# SPECIFIC REMOVE
-#=================================================
-# REMOVE VARIOUS FILES
-#=================================================
-
-# Remove the log files
-ynh_secure_remove --file="/var/log/$app"
 
 #=================================================
 # GENERIC FINALIZATION
