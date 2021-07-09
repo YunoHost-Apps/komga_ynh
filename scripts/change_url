@@ -102,13 +102,22 @@ then
 fi
 
 #=================================================
+# SETUP SYSTEMD
+#=================================================
+ynh_script_progression --message="Configuring a systemd service..." --weight=1
+
+path_url=$new_path
+# Create a dedicated systemd config
+ynh_add_systemd_config
+
+#=================================================
 # GENERIC FINALISATION
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=5
 
-ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Tomcat started on port\(s\): $port \(http\) with context path '$path_url'"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Started ApplicationKt"
 
 #=================================================
 # RELOAD NGINX
