@@ -3,71 +3,28 @@
 [![Niveau d'intégration](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
 [![Installer Komga avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
-*[Read this readme in english.](./README.md)* 
+*[Read this readme in english.](./README.md)*
+*[Lire ce readme en français.](./README_fr.md)*
 
-> *Ce package vous permet d'installer Komga rapidement et simplement sur un serveur YunoHost.  
-Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
+> *Ce package vous permet d'installer Komga rapidement et simplement sur un serveur YunoHost.
+Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
 
 ## Vue d'ensemble
-Komga est un serveur multimédia pour vos bandes dessinées, mangas, BD et magazines. 
 
-Les fonctionnalités incluent :
-* Parcourir les bibliothèques, séries et livres
-* Barre de recherche
-* Télécharger des livres
-* Gérer plusieurs utilisateurs, avec le contrôle des accès par bibliothèque
-* Lecteur Web
+Serveur multimédia pour vos bandes dessinées, mangas et magazines
 
-**Version incluse :** 0.75.1
+**Version incluse :** 0.106.1~ynh1
 
-## Captures d'écran
+**Démo :** https://demo.komga.org
 
-![](./screenshots/home.png)
+## Documentations et ressources
 
-## Démo
-
-* [Démo officielle](https://demo.komga.org)
-
-- Login : `demo@komga.org`
-- Mot de passe : `komga-demo`
-
-## Configuration
-
- * Comment configurer cette application : via le panneau d'administration
-
-## Documentation
-
- * Documentation officielle : https://komga.org/guides/
- * Documentation YunoHost : Si une documentation spécifique est nécessaire, n'hésitez pas à contribuer.
-
-## Caractéristiques spécifiques YunoHost
-
-#### Support multi-utilisateur
-
-* L'authentification LDAP et HTTP est-elle prise en charge ? **Non**
-* L'application peut-elle être utilisée par plusieurs utilisateurs ? **Oui**
-
-#### Architectures supportées
-
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/komga%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/komga/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/komga%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/komga/)
-
-## Limitations
-
-* Limitations connues.
-
-## Informations additionnelles
-
-* Autres informations que vous souhaitez ajouter sur cette application.
-
-## Liens
-
- * Signaler un bug : https://github.com/YunoHost-Apps/komga_ynh/issues
- * Site de l'application : https://komga.org
- * Dépôt de l'application principale : https://github.com/gotson/komga
- * Site web YunoHost : https://yunohost.org/
-
----
+* Site officiel de l'app : https://komga.org
+* Documentation officielle utilisateur : https://yunohost.org/apps
+* Documentation officielle de l'admin : https://komga.org/guides/
+* Dépôt de code officiel de l'app : https://github.com/gotson/komga
+* Documentation YunoHost pour cette app : https://yunohost.org/app_komga
+* Signaler un bug : https://github.com/YunoHost-Apps/komga_ynh/issues
 
 ## Informations pour les développeurs
 
@@ -79,3 +36,5 @@ sudo yunohost app install https://github.com/YunoHost-Apps/komga_ynh/tree/testin
 ou
 sudo yunohost app upgrade komga -u https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 ```
+
+**Plus d'infos sur le packaging d'applications :** https://yunohost.org/packaging_apps

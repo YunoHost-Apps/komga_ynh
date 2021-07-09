@@ -6,8 +6,16 @@
         "en": "Media server for your comics, manga and magazines",
         "fr": "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
     },
-    "version": "0.87.4~ynh1",
+    "version": "0.106.1~ynh1",
     "url": "https://komga.org",
+    "upstream": {
+        "license": "MIT",
+        "website": "https://komga.org",
+        "demo": "https://demo.komga.org",
+        "admindoc": "https://komga.org/guides/",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/gotson/komga"
+    },
     "multi_instance": true,
     "license": "MIT",
     "maintainer": {
@@ -16,7 +24,7 @@
         "url": "https://navan.dev"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.2.4"
     },
     "services": [
         "nginx"
@@ -26,29 +34,17 @@
             {
                 "name": "domain",
                 "type": "domain",
-                "ask": {
-                    "en": "Choose a domain name for Komga",
-                    "fr": "Choisissez un nom de domaine pour Komga"
-                },
                 "example": "example.com"
             },
             {
                 "name": "path",
                 "type": "path",
-                "ask": {
-                    "en": "Choose a path for Komga",
-                    "fr": "Choisissez un chemin pour Komga"
-                },
                 "example": "/komga",
                 "default": "/komga"
             },
             {
                 "name": "is_public",
                 "type": "boolean",
-                "ask": {
-                    "en": "Is it a public application?",
-                    "fr": "Est-ce une application publique ?"
-                },
                 "default": true
             }
         ]
