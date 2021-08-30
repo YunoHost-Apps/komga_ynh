@@ -25,7 +25,7 @@ w
 - Download book files
 
 
-**Version incluse :** 0.119.1~ynh1
+**Version incluse :** 0.119.2~ynh1
 
 **Démo :** https://demo.komga.org
 
