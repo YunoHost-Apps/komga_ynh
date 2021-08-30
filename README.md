@@ -29,7 +29,7 @@ w
 - Download book files
 
 
-**Shipped version:** 0.119.1~ynh1
+**Shipped version:** 0.119.2~ynh1
 
 **Demo:** https://demo.komga.org
 
