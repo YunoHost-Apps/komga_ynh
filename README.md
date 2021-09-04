@@ -15,11 +15,27 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Media server for your comics, manga and magazines
+Komga is a free and open source comics/mangas server.
 
-**Shipped version:** 0.106.1~ynh1
+### Features
+
+- Browse libraries, series and books via a responsive web UI that works on desktop, tablets and phones
+- Organize your library with collections and read lists
+- Edit metadata for your series and books
+- Import embedded metadata automatically
+- Webreader with multiple reading modes
+- Manage multiple users, with per-library access control
+- Offers a REST API, many community tools and scripts can interact with Komga
+- Download book files
+
+
+**Shipped version:** 0.120.1~ynh1
 
 **Demo:** https://demo.komga.org
+
+## Screenshots
+
+![](./doc/screenshots/home.png)
 
 ## Documentation and resources
 
