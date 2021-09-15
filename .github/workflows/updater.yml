@@ -20,6 +20,7 @@ jobs:
       - name: Run the updater script
         id: run_updater
         run: |
+          chmod +x .github/workflows/updater.sh
           # Setting up Git user
           git config --global user.name 'yunohost-bot'
           git config --global user.email 'yunohost-bot@users.noreply.github.com'
