@@ -6,7 +6,7 @@
         "en": "Media server for your comics, manga and magazines",
         "fr": "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
     },
-    "version": "0.126.0~ynh3",
+    "version": "0.126.0~ynh4",
     "url": "https://komga.org",
     "upstream": {
         "license": "MIT",
