@@ -6,14 +6,13 @@
         "en": "Media server for your comics, manga and magazines",
         "fr": "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
     },
-    "version": "0.126.0~ynh4",
+    "version": "0.128.1~ynh1",
     "url": "https://komga.org",
     "upstream": {
         "license": "MIT",
         "website": "https://komga.org",
         "demo": "https://demo.komga.org",
         "admindoc": "https://komga.org/guides/",
-        "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/gotson/komga"
     },
     "multi_instance": true,
@@ -30,11 +29,10 @@
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain",
-                "example": "example.com"
             },
             {
                 "name": "path",
