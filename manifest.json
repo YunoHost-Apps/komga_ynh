@@ -13,7 +13,6 @@
         "website": "https://komga.org",
         "demo": "https://demo.komga.org",
         "admindoc": "https://komga.org/guides/",
-        "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/gotson/komga"
     },
     "multi_instance": true,
@@ -34,7 +33,6 @@
             {
                 "name": "domain",
                 "type": "domain",
-                "example": "example.com"
             },
             {
                 "name": "path",
