@@ -29,7 +29,7 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Shipped version:** 0.133.0~ynh1
+**Shipped version:** 0.134.0~ynh1
 
 **Demo:** https://demo.komga.org
 
