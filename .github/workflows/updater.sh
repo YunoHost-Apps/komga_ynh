@@ -63,7 +63,7 @@ echo "Handling asset at $asset_url"
 # Here we base the source file name upon a unique keyword in the assets url (admin vs. update)
 # Leave $src empty to ignore the asset
 case $asset_url in
-  *"komga-"*".jar"*)
+  *"komga-"*".jar")
     src="app"
     ;;
   *)
@@ -86,8 +86,8 @@ checksum=$(sha256sum "$tempdir/$filename" | head -c 64)
 rm -rf $tempdir
 
 # Get extension
-if [[ $filename == *.tar.gz ]]; then
-  extension=tar.gz
+if [[ $filename == *.jar ]]; then
+  extension=jar
 else
   extension=${filename##*.}
 fi
