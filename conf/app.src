@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/gotson/komga/releases/download/v0.154.1/komga-0.154.1.jar
-SOURCE_SUM=275bb6254eba501af9af5daf856e5e56a8c74aa6c4abdf8183ee05da12703d17
+SOURCE_URL=https://github.com/gotson/komga/releases/download/v0.154.2/komga-0.154.2.jar
+SOURCE_SUM=9ec029d9d2be5e9f6d3c04b79dab0f519fb98a8ac6b18915dd18b0600380203a
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=jar
 SOURCE_IN_SUBDIR=false
