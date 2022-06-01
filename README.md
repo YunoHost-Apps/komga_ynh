@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Komga for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Working status](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
 [![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -29,31 +29,32 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Shipped version:** 0.154.1~ynh1
+**Shipped version:** 0.154.2~ynh1
 
 **Demo:** https://demo.komga.org
 
 ## Screenshots
 
-![](./doc/screenshots/home.png)
+![Screenshot of Komga](./doc/screenshots/home.png)
 
 ## Documentation and resources
 
-* Official app website: https://komga.org
-* Official admin documentation: https://komga.org/guides/
-* Upstream app code repository: https://github.com/gotson/komga
-* YunoHost documentation for this app: https://yunohost.org/app_komga
-* Report a bug: https://github.com/YunoHost-Apps/komga_ynh/issues
+* Official app website: <https://komga.org>
+* Official admin documentation: <https://komga.org/guides/>
+* Upstream app code repository: <https://github.com/gotson/komga>
+* YunoHost documentation for this app: <https://yunohost.org/app_komga>
+* Report a bug: <https://github.com/YunoHost-Apps/komga_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/komga_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade komga -u https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
