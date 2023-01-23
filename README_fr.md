@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # Komga pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)  
 [![Installer Komga avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Komga rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Komga rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Komga is a free and open source comics/mangas server.
 
@@ -29,19 +29,19 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Version incluse :** 0.157.4~ynh1
+**Version incluse :** 0.160.0~ynh1
 
 **Démo :** https://demo.komga.org
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Komga](./doc/screenshots/home.png)
+![Capture d’écran de Komga](./doc/screenshots/home.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://komga.org>
-* Documentation officielle de l'admin : <https://komga.org/guides/>
-* Dépôt de code officiel de l'app : <https://github.com/gotson/komga>
+* Site officiel de l’app : <https://komga.org>
+* Documentation officielle de l’admin : <https://komga.org/guides/>
+* Dépôt de code officiel de l’app : <https://github.com/gotson/komga>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_komga>
 * Signaler un bug : <https://github.com/YunoHost-Apps/komga_ynh/issues>
 
@@ -57,4 +57,4 @@ ou
 sudo yunohost app upgrade komga -u https://github.com/YunoHost-Apps/komga_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
