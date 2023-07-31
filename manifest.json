@@ -23,7 +23,7 @@
         "url": "https://navan.dev"
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.1.9"
     },
     "services": [
         "nginx"
