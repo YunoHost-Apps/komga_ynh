@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="openjdk-11-jre-headless"
+pkg_dependencies="openjdk-17-jre-headless"
 
 #=================================================
 # PERSONAL HELPERS
