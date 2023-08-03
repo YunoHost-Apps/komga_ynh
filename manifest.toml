@@ -58,4 +58,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "openjdk-11-jre-headless"
+    packages = "openjdk-17-jre-headless"
