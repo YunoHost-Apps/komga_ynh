@@ -42,7 +42,7 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/gotson/komga/releases/download/v1.3.0/komga-1.3.0.jar"
         sha256 = "eff4383cecf63324bc85edc4e45fc37a59b0738fc41c2a175f3e44027cd5c059"
-        format = "jar"
+        extract = false
         rename = "komga.jar"
 
     [resources.ports]
