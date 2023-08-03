@@ -9,7 +9,7 @@ komga:
     key: changeMe! #required to activate the remember-me auto-login via cookies
     validity: 2592000 #validity of the cookie in seconds, here 1 month
   database:
-    file: __DATADIR__.komga/database.sqlite
+    file: __DATA_DIR__.komga/database.sqlite
   database-backup:
     path: ~/.komga/database-backup.zip
     schedule: "0 0 */6 * * ?" #every 6 hours
