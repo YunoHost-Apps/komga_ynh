@@ -1,0 +1,61 @@
+packaging_format = 2
+
+id = "komga"
+name = "Komga"
+description.en = "Media server for your comics, manga and magazines"
+description.fr = "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
+
+version = "1.3.0~ynh1"
+
+maintainers = ["Navan Chauhan"]
+
+[upstream]
+license = "MIT"
+website = "https://komga.org"
+demo = "https://demo.komga.org"
+admindoc = "https://komga.org/guides/"
+code = "https://github.com/gotson/komga"
+
+[integration]
+yunohost = ">= 12.0"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/komga"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+        [resources.sources.main]
+        url = "https://github.com/gotson/komga/releases/download/v1.3.0/komga-1.3.0.jar"
+        sha256 = "eff4383cecf63324bc85edc4e45fc37a59b0738fc41c2a175f3e44027cd5c059"
+        extract = false
+        rename = "komga.jar"
+
+    [resources.ports]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+    subdirs = [".komga"]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "openjdk-17-jre-headless"
