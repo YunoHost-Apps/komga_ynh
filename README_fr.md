@@ -43,7 +43,7 @@ Komga is a free and open source comics/mangas server.
 * Site officiel de l’app : <https://komga.org>
 * Documentation officielle de l’admin : <https://komga.org/guides/>
 * Dépôt de code officiel de l’app : <https://github.com/gotson/komga>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_komga>
+* YunoHost Store: <https://apps.yunohost.org/app/komga>
 * Signaler un bug : <https://github.com/YunoHost-Apps/komga_ynh/issues>
 
 ## Informations pour les développeurs
