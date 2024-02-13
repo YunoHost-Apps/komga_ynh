@@ -53,6 +53,13 @@ ynh_add_systemd_config
 # Use logrotate to manage app-specific logfile(s)
 ynh_use_logrotate --non-append
 
+chmod 640 "/var/log/$app"
+
+#=================================================
+# INTEGRATE SERVICE IN YUNOHOST
+#=================================================
+ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
+
 yunohost service add $app --description="Media server for your comics, manga and magazines" --log="/var/log/$app/$app.log"
 
 #=================================================
