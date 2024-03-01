@@ -1,12 +1,12 @@
 [Unit]
-Description=Komga server
+Description=Komga: Media server for your comics
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__
+WorkingDirectory=__INSTALL_DIR__/
 ExecStart=/usr/bin/java -jar -Xmx1g komga.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__"
 Restart=on-failure
 RestartSec=10
