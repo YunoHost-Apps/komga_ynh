@@ -10,15 +10,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# LOAD SETTINGS
-#=================================================
-ynh_script_progression --message="Loading installation settings..." --weight=1
-
-app=$YNH_APP_INSTANCE_NAME
-
-port=$(ynh_app_setting_get --app=$app --key=port)
-
-#=================================================
 # STANDARD MODIFICATIONS
 #=================================================
 # STOP SYSTEMD SERVICE
@@ -35,14 +26,22 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 ynh_change_url_nginx_config
 
 #=================================================
+# SETUP SYSTEMD
+#=================================================
+ynh_script_progression --message="Configuring a systemd service..." --weight=1
+
+path=$new_path
+# Create a dedicated systemd config
+ynh_add_systemd_config
+
+#=================================================
 # GENERIC FINALISATION
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
-# Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log" --line_match="Listening on"
+ynh_systemd_action --service_name=$app --action=start --log_path="systemd" --line_match="Started ApplicationKt"
 
 #=================================================
 # END OF SCRIPT

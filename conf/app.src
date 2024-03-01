@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/gotson/komga/releases/download/v1.2.1/komga-1.2.1.jar
-SOURCE_SUM=fb802de687ff8daa25e1cd5e125a70fc3f610e759291cf31e200a6aaa83cf1ab
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=jar
-SOURCE_IN_SUBDIR=false
-SOURCE_EXTRACT=false
-SOURCE_FILENAME=komga.jar

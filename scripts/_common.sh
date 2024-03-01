@@ -4,9 +4,6 @@
 # COMMON VARIABLES
 #=================================================
 
-# dependencies used by the app
-pkg_dependencies="ca-certificates-java openjdk-17-jre-headless"
-
 #=================================================
 # PERSONAL HELPERS
 #=================================================
