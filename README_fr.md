@@ -29,7 +29,6 @@ Komga est un serveur de bandes dessinées/mangas gratuit et open source.
 - Propose une API REST, de nombreux outils et scripts communautaires peuvent interagir avec Komga
 - Télécharger des fichiers de livres
 
-
 **Version incluse :** 1.10.3~ynh1
 
 **Démo :** https://demo.komga.org
