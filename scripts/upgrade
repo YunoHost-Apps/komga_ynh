@@ -29,6 +29,16 @@ chown -R $app:www-data "$install_dir"
 chmod +x $install_dir/komga.jar
 
 #=================================================
+# UPDATE A CONFIG FILE
+#=================================================
+ynh_script_progression --message="Updating $app's configuration files..." --weight=1
+
+ynh_add_config --template="application.yml" --destination="$data_dir/application.yml"
+
+chmod 400 "$data_dir/application.yml"
+chown "$app:$app" "$data_dir/application.yml"
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=5
