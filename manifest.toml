@@ -60,4 +60,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    pacakges = "openjdk-17-jre"
+    packages = "openjdk-17-jre"
