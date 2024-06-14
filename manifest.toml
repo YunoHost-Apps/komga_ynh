@@ -60,11 +60,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-
-    packages_from_raw_bash = """
-    if [[ $YNH_DEBIAN_VERSION == "bullseye" ]]; then
-        echo "openjdk-11-jre";
-    elif [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
-        echo "openjdk-17-jre";
-    fi
-    """
+    packages = "openjdk-17-jre"
