@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=/usr/bin/java -jar -Xmx1g komga.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__"
+ExecStart=/usr/bin/java -jar -Xmx1g komga.jar --server.port=__PORT__ --server.servlet.context-path="__PATH__/" --komga.config-dir="__DATA_DIR__/"
 Restart=on-failure
 RestartSec=10
 

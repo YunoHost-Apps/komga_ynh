@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Komga quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -30,7 +30,7 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Shipped version:** 1.10.3~ynh1
+**Shipped version:** 1.11.1~ynh1
 
 **Demo:** <https://demo.komga.org>
 
