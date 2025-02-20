@@ -5,7 +5,7 @@ name = "Komga"
 description.en = "Media server for your comics, manga and magazines"
 description.fr = "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
 
-version = "1.11.1~ynh1"
+version = "1.20.0~ynh1"
 
 maintainers = ["Navan Chauhan"]
 
@@ -17,7 +17,8 @@ admindoc = "https://komga.org/guides/"
 code = "https://github.com/gotson/komga"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.18"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
@@ -43,16 +44,19 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/gotson/komga/releases/download/1.11.1/komga-1.11.1.jar"
-        sha256 = "2fa7dd47c8fad31d982f94b983a4c73752cbf9dcba9331e28e3351e3b2aeca5a"
+        url = "https://github.com/gotson/komga/releases/download/1.20.0/komga-1.20.0.jar"
+        sha256 = "160ce190b124c343d623bd085da821db8d2e22421249edef55055929f256ddb7"
         extract = false
         rename = "komga.jar"
+
+        autoupdate.strategy = "latest_github_tag"
 
     [resources.ports]
 
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.data_dir]
 
