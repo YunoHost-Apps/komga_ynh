@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Komga YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/komga)](https://ci-apps.yunohost.org/ci/apps/komga/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/komga)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/komga)
 
 [![Instalatu Komga YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
@@ -30,7 +32,7 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Paketatutako bertsioa:** 1.11.1~ynh1
+**Paketatutako bertsioa:** 1.20.0~ynh1
 
 **Demoa:** <https://demo.komga.org>
 
