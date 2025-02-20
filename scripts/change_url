@@ -22,8 +22,6 @@ ynh_config_change_url_nginx
 #=================================================
 ynh_script_progression "Configuring $app's systemd service..."
 
-path=$new_path
-# Create a dedicated systemd config
 ynh_config_add_systemd
 
 #=================================================

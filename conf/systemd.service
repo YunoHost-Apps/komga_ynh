@@ -1,5 +1,5 @@
 [Unit]
-Description=Komga: Media server for your comics
+Description=Komga: media server for your comics
 After=network.target
 
 [Service]
