@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Komga pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/komga)](https://ci-apps.yunohost.org/ci/apps/komga/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/komga)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/komga)
 
 [![Installer Komga avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
@@ -29,7 +31,7 @@ Komga est un serveur de bandes dessinées/mangas gratuit et open source.
 - Propose une API REST, de nombreux outils et scripts communautaires peuvent interagir avec Komga
 - Télécharger des fichiers de livres
 
-**Version incluse :** 1.11.1~ynh1
+**Version incluse :** 1.20.0~ynh1
 
 **Démo :** <https://demo.komga.org>
 

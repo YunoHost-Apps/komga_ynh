@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Komga for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga) ![Working status](https://ci-apps.yunohost.org/ci/badges/komga.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/komga.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/komga)](https://ci-apps.yunohost.org/ci/apps/komga/)
+![Working status](https://apps.yunohost.org/badge/state/komga)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/komga)
 
 [![Install Komga with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga)
 
@@ -30,7 +32,7 @@ Komga is a free and open source comics/mangas server.
 - Download book files
 
 
-**Shipped version:** 1.11.1~ynh1
+**Shipped version:** 1.20.0~ynh1
 
 **Demo:** <https://demo.komga.org>
 
