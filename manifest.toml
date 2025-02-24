@@ -61,6 +61,10 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
     main.auth_header = false
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.auth_header = false
+    api.show_tile = false
 
     [resources.apt]
     packages = "openjdk-17-jre"
