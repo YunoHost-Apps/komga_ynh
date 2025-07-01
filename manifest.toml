@@ -5,7 +5,7 @@ name = "Komga"
 description.en = "Media server for your comics, manga and magazines"
 description.fr = "Serveur multimédia pour vos bandes dessinées, mangas et magazines"
 
-version = "1.20.0~ynh2"
+version = "1.21.2~ynh1"
 
 maintainers = ["Navan Chauhan"]
 
@@ -43,8 +43,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/gotson/komga/releases/download/1.20.0/komga-1.20.0.jar"
-        sha256 = "160ce190b124c343d623bd085da821db8d2e22421249edef55055929f256ddb7"
+        url = "https://github.com/gotson/komga/releases/download/1.21.2/komga-1.21.2.jar"
+        sha256 = "158c39d7d553e343d4ddf5446fb0c1a124f66ea84f5dc12aaae1e419e50b4379"
         extract = false
         rename = "komga.jar"
 
@@ -61,6 +61,10 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
     main.auth_header = false
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.auth_header = false
+    api.show_tile = false
 
     [resources.apt]
     packages = "openjdk-17-jre"
