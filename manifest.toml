@@ -67,4 +67,4 @@ ram.runtime = "50M"
     api.show_tile = false
 
     [resources.apt]
-    packages = "openjdk-17-jre-headless\\|openjdk-25-jre-headless",]
+    packages = "openjdk-17-jre-headless\\|openjdk-25-jre-headless"
