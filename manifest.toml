@@ -70,8 +70,8 @@ ram.runtime = "50M"
     packages = ""
     packages_from_raw_bash = """
     if [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
-        echo "openjdk-17-jre-headless";
+        echo "openjdk-17-jre";
     elif [[ $YNH_DEBIAN_VERSION == "trixie" ]]; then
-        echo "openjdk-25-jre-headless";
+        echo "openjdk-25-jre";
     fi
     """
