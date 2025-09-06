@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 # workaround for https://github.com/YunoHost/issues/issues/2422
