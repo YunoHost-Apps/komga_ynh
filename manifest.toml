@@ -67,4 +67,11 @@ ram.runtime = "50M"
     api.show_tile = false
 
     [resources.apt]
-    packages = "openjdk-17-jre"
+    packages = ""
+    packages_from_raw_bash = """
+    if [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
+        echo "openjdk-17-jre";
+    elif [[ $YNH_DEBIAN_VERSION == "trixie" ]]; then
+        echo "openjdk-21-jre";
+    fi
+    """
